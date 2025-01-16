@@ -14,3 +14,5 @@ When these packagers are available, the files `generate_sim_ggm_data.R` and `run
 `methods.R` and `methods_ggm.R` contain the functions used in the simulation study.
 `cov_srrr.R` is our custom implementation of the method of Chen & Huang (2016) [https://doi.org/10.1007/s11222-014-9517-6].
 `performance.R` contains the functions used to evaluate the performance of the methods.
+
+A Dockerfile is also provided to run the code in a containerized environment.

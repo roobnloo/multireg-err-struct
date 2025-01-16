@@ -102,6 +102,6 @@ RUN echo "echo \"Jupyter server token: \$(jupyter server list 2>&1 | grep -oP '(
     echo "sh \${HOME}/.get-jupyter-url.sh" >> ${HOME}/.bashrc
 
 RUN R -q -e 'install.packages(c("tidyverse", "patchwork", "parallel"))' && \
-RUN R -q -e 'install.packages(c("rrpack", "MRCE", "CVglasso", "MultiVarSelect"))' && \
+RUN R -q -e 'install.packages(c("rrpack", "MRCE", "CVglasso", "MultiVarSel", "glmnet"))' && \
     R -q -e 'remotes::install_github("ajmolstad/MSRL")' && \
     R -q -e 'remotes::install_github("roobnloo/dpglasso-fixed")' 
